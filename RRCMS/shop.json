@@ -1,0 +1,64 @@
+pData{
+	//page properties
+	backgroundColor:"#fff",
+	backgroundUrl:null,
+	title:null,
+	description:null,
+	shareIcon:null,
+	pageId:734,
+
+	//module data
+	mDatas:[
+		{
+			mData
+		},
+		{
+			mData
+		}
+	],
+
+	//redirect
+	needRedirect: false,
+	redirectUrl:null,
+}
+
+
+MData{
+	//module properties
+	mId='appProductsSlide_1_1',
+	 mType='appProductsSlide', 
+	 title='', 
+	 subtitle='null', 
+	 rightLink='', 
+
+
+	 headType=LEFT, 
+	 mDescription='',
+	  mLogo='null', 
+	  style=Style{
+	  	marginBottom=-1,
+	  	 border=-1, 
+	  	 backgroundColor='#F5F5F5',
+	  	  backgroundUrl='null'
+	  }, 
+
+
+	  subMDatas=[
+	  	SubMData{
+	  		datas=[
+	  		{"_action":"[]","_type":"IMG","_vid":"734.5670.0.","endTime":"1524549946303","imgUrl":"http://imgcms.yit.com/cmsres/20170105/2ab16359-2616-4a1a-a20e-89551a551486.jpeg","startTime":"1493013946303"}
+	  		], 
+	  		hasMore=false
+	  	}, 
+	  	SubMData{
+	  		datas=[
+	  		{"_action":"[\"LINK\",\"CART\"]","_type":"ITEM","_vid":"734.5671.0.","endTime":"1524549960637","extImgUrl":"https://img01.yit.com/media/675628da-6367-4c6a-9dfb-842b519be8f8.jpg","h5link":"http://h5.yit.com/product.html?product_id=21287&_spm=1.734.5671.0","imgUrl":"https://img01.yit.com/media/4eed6159-d5b3-4944-bca0-d2c9f375c51c.jpg","itemId":"21287","link":"http://www.yit.com/product.html?product_id=21287&_spm=1.734.5671.0","name":"特惠 《百工01》","startTime":"1493013960637"
+	  		},
+	  		 {"_action":"[\"LINK\",\"CART\"]","_type":"ITEM","_vid":"734.5671.1.","endTime":"1524549960637","extImgUrl":"https://img01.yit.com/media/a567863f-0ce9-4f88-9308-09a6eb0d75bd.jpg","h5link":"http://h5.yit.com/product.html?product_id=20928&_spm=1.734.5671.1","imgUrl":"https://img01.yit.com/media/5c47bd0d-c04d-444a-b902-7776e33384d7.jpg","itemId":"20928","link":"http://www.yit.com/product.html?product_id=20928&_spm=1.734.5671.1","name":"31-54m²适用净化器滤网 Blueair 布鲁雅尔","startTime":"1493013960637"}, 
+	  		 {"_action":"[\"LINK\",\"CART\"]","_type":"ITEM","_vid":"734.5671.2.","endTime":"1524549960637","extImgUrl":"https://img01.yit.com/media/eee5bd22-beb8-4494-be5d-0ad85324e7f3.jpg","h5link":"http://h5.yit.com/product.html?product_id=20927&_spm=1.734.5671.2","imgUrl":"https://img01.yit.com/media/630191cb-d583-45d7-9db0-3569b1deff6e.jpg","itemId":"20927","link":"http://www.yit.com/product.html?product_id=20927&_spm=1.734.5671.2","name":"17-30m²适用净化器滤网 Blueair 布鲁雅尔","startTime":"1493013960637"}, 
+	  		 {"_action":"[\"LINK\",\"CART\"]","_type":"ITEM","_vid":"734.5671.3.","endTime":"1524549960637","extImgUrl":"https://img01.yit.com/media/7737f0a1-feaf-496c-9ae6-96d629931d87.jpg","h5link":"http://h5.yit.com/product.html?product_id=20926&_spm=1.734.5671.3","imgUrl":"https://img01.yit.com/media/6f7e9eab-eec6-42b7-b8e3-a7a1e1a7c142.jpg","itemId":"20926","link":"http://www.yit.com/product.html?product_id=20926&_spm=1.734.5671.3","name":"14-24m²可遥控式净化器滤网 Blueair 布鲁雅尔","startTime":"1493013960637"}
+	  		],
+	  	     hasMore=false
+	  	}
+	  ]
+}
