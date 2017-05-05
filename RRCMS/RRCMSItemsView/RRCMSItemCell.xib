@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RRCMSItemCell" id="gTV-IL-0wX" customClass="RRCMSItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWA-D6-Gyk">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大马士革玫瑰纯露Florihana" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CS-Lx-h43">
+                        <rect key="frame" x="0.0" y="60" width="100" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$65" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHo-hM-1Pd">
+                        <rect key="frame" x="0.0" y="100" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Hvx-4v-3cF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fHo-hM-1Pd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kmv-JB-xT5"/>
+                <constraint firstAttribute="trailing" secondItem="fHo-hM-1Pd" secondAttribute="trailing" id="MHK-Ar-vRn"/>
+                <constraint firstItem="2CS-Lx-h43" firstAttribute="height" secondItem="fHo-hM-1Pd" secondAttribute="height" multiplier="2" id="NhF-i3-NC2"/>
+                <constraint firstItem="CWA-D6-Gyk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OmM-ad-NgR"/>
+                <constraint firstItem="CWA-D6-Gyk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YTv-Ba-xhy"/>
+                <constraint firstItem="fHo-hM-1Pd" firstAttribute="top" secondItem="2CS-Lx-h43" secondAttribute="bottom" id="Ysa-W8-h9H"/>
+                <constraint firstAttribute="trailing" secondItem="CWA-D6-Gyk" secondAttribute="trailing" id="ZOI-A0-sZC"/>
+                <constraint firstItem="2CS-Lx-h43" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gi7-pr-ibK"/>
+                <constraint firstAttribute="bottom" secondItem="fHo-hM-1Pd" secondAttribute="bottom" id="jkg-IJ-9v1"/>
+                <constraint firstAttribute="trailing" secondItem="2CS-Lx-h43" secondAttribute="trailing" id="v5J-yy-ofr"/>
+                <constraint firstItem="2CS-Lx-h43" firstAttribute="top" secondItem="CWA-D6-Gyk" secondAttribute="bottom" id="wyN-88-7fl"/>
+            </constraints>
+            <connections>
+                <outlet property="itemImageView" destination="CWA-D6-Gyk" id="HVM-0K-cx0"/>
+                <outlet property="itemNameLabel" destination="2CS-Lx-h43" id="pz2-lw-IW9"/>
+                <outlet property="itemPriceLabel" destination="fHo-hM-1Pd" id="64k-d4-pYY"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

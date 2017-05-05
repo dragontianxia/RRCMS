@@ -23,6 +23,10 @@
 		E4B61E261EBB32FC00C4E684 /* RRCMSListCellBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E1E1EBB32FC00C4E684 /* RRCMSListCellBannerView.m */; };
 		E4B61E271EBB32FC00C4E684 /* RRCMSListCellCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E201EBB32FC00C4E684 /* RRCMSListCellCycleView.m */; };
 		E4B61E281EBB32FC00C4E684 /* RRCMSLisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E221EBB32FC00C4E684 /* RRCMSLisViewController.m */; };
+		E4B61E301EBC579C00C4E684 /* RRCMSItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E2F1EBC579B00C4E684 /* RRCMSItemsView.m */; };
+		E4B61E341EBC596700C4E684 /* RRCMSItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E321EBC596700C4E684 /* RRCMSItemCell.m */; };
+		E4B61E351EBC596700C4E684 /* RRCMSItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B61E331EBC596700C4E684 /* RRCMSItemCell.xib */; };
+		E4B61E381EBC66AB00C4E684 /* RRCMSListCellItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */; };
 		E4B9F3BE1EB884F400688585 /* shop.json in Resources */ = {isa = PBXBuildFile; fileRef = E4B9F3BD1EB884F400688585 /* shop.json */; };
 		ECA1ED60DC682897E352E652 /* libPods-RRCMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BADAFFE2E6DD0D48A1515849 /* libPods-RRCMS.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,13 @@
 		E4B61E201EBB32FC00C4E684 /* RRCMSListCellCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSListCellCycleView.m; sourceTree = "<group>"; };
 		E4B61E211EBB32FC00C4E684 /* RRCMSLisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSLisViewController.h; sourceTree = "<group>"; };
 		E4B61E221EBB32FC00C4E684 /* RRCMSLisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSLisViewController.m; sourceTree = "<group>"; };
+		E4B61E2E1EBC579B00C4E684 /* RRCMSItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSItemsView.h; sourceTree = "<group>"; };
+		E4B61E2F1EBC579B00C4E684 /* RRCMSItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSItemsView.m; sourceTree = "<group>"; };
+		E4B61E311EBC596700C4E684 /* RRCMSItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSItemCell.h; sourceTree = "<group>"; };
+		E4B61E321EBC596700C4E684 /* RRCMSItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSItemCell.m; sourceTree = "<group>"; };
+		E4B61E331EBC596700C4E684 /* RRCMSItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSItemCell.xib; sourceTree = "<group>"; };
+		E4B61E361EBC66AB00C4E684 /* RRCMSListCellItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSListCellItemsView.h; sourceTree = "<group>"; };
+		E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSListCellItemsView.m; sourceTree = "<group>"; };
 		E4B9F3BD1EB884F400688585 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
 		EB273D50DAC3CB1F2D01F217 /* Pods-RRCMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRCMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RRCMS/Pods-RRCMS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +133,9 @@
 				E4797EEF1EAEF10700A60646 /* Assets.xcassets */,
 				E4797EF11EAEF10700A60646 /* LaunchScreen.storyboard */,
 				E4797EEC1EAEF10700A60646 /* Main.storyboard */,
-				E4B61DFB1EBB315A00C4E684 /* RRCMSContentView */,
+				E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */,
 				E4B61E171EBB32FC00C4E684 /* RRCMSListView */,
+				E4B61DFB1EBB315A00C4E684 /* RRCMSContentView */,
 				E4797F0D1EAF237E00A60646 /* RRCMSSegment */,
 				E4797EE31EAEF10700A60646 /* Supporting Files */,
 			);
@@ -170,12 +182,26 @@
 				E4B61E1E1EBB32FC00C4E684 /* RRCMSListCellBannerView.m */,
 				E4B61E1F1EBB32FC00C4E684 /* RRCMSListCellCycleView.h */,
 				E4B61E201EBB32FC00C4E684 /* RRCMSListCellCycleView.m */,
+				E4B61E361EBC66AB00C4E684 /* RRCMSListCellItemsView.h */,
+				E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */,
 				E4B61E181EBB32FC00C4E684 /* RRCMSListViewLayout.h */,
 				E4B61E191EBB32FC00C4E684 /* RRCMSListViewLayout.m */,
 				E4B61E211EBB32FC00C4E684 /* RRCMSLisViewController.h */,
 				E4B61E221EBB32FC00C4E684 /* RRCMSLisViewController.m */,
 			);
 			path = RRCMSListView;
+			sourceTree = "<group>";
+		};
+		E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */ = {
+			isa = PBXGroup;
+			children = (
+				E4B61E2E1EBC579B00C4E684 /* RRCMSItemsView.h */,
+				E4B61E2F1EBC579B00C4E684 /* RRCMSItemsView.m */,
+				E4B61E311EBC596700C4E684 /* RRCMSItemCell.h */,
+				E4B61E321EBC596700C4E684 /* RRCMSItemCell.m */,
+				E4B61E331EBC596700C4E684 /* RRCMSItemCell.xib */,
+			);
+			path = RRCMSItemsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B61E351EBC596700C4E684 /* RRCMSItemCell.xib in Resources */,
 				E4B61E251EBB32FC00C4E684 /* RRCMSListCellBannerCell.xib in Resources */,
 				E4B9F3BE1EB884F400688585 /* shop.json in Resources */,
 				E4797EF31EAEF10700A60646 /* LaunchScreen.storyboard in Resources */,
@@ -308,12 +335,15 @@
 				E4B61E0E1EBB315A00C4E684 /* RRCMSContentView.m in Sources */,
 				E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */,
 				E4797F161EAF237E00A60646 /* RRSegmentView.m in Sources */,
+				E4B61E341EBC596700C4E684 /* RRCMSItemCell.m in Sources */,
 				E4B61E271EBB32FC00C4E684 /* RRCMSListCellCycleView.m in Sources */,
 				E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */,
 				E4B61E241EBB32FC00C4E684 /* RRCMSListCellBannerCell.m in Sources */,
 				E4B61E261EBB32FC00C4E684 /* RRCMSListCellBannerView.m in Sources */,
+				E4B61E301EBC579C00C4E684 /* RRCMSItemsView.m in Sources */,
 				E4797EE51EAEF10700A60646 /* main.m in Sources */,
 				E4B61E281EBB32FC00C4E684 /* RRCMSLisViewController.m in Sources */,
+				E4B61E381EBC66AB00C4E684 /* RRCMSListCellItemsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

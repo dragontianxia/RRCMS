@@ -17,7 +17,7 @@
 
 @implementation RRCMSContentView
 
-static NSString * const cellIdentifier = @"RRCollectionCell";
+static NSString * const contentViewCellIdentifier = @"RRCollectionCell";
 
 - (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -30,7 +30,7 @@ static NSString * const cellIdentifier = @"RRCollectionCell";
         [self setPagingEnabled:YES];
         [self setDelegate:self];
         [self setDataSource:self];
-        [self registerClass:[RRCMSContentViewCell class] forCellWithReuseIdentifier:cellIdentifier];
+        [self registerClass:[RRCMSContentViewCell class] forCellWithReuseIdentifier:contentViewCellIdentifier];
         [self setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
@@ -42,7 +42,7 @@ static NSString * const cellIdentifier = @"RRCollectionCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    RRCMSContentViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    RRCMSContentViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:contentViewCellIdentifier forIndexPath:indexPath];
     cell.dataSourceArray = @[@"xx", @"yy", @"zz", @"xx", @"yy", @"zz"];
     return cell;
 }

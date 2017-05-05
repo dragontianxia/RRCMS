@@ -9,6 +9,7 @@
 #import "RRCMSLisViewController.h"
 #import "RRCMSListCellCycleView.h"
 #import "RRCMSListCellBannerCell.h"
+#import "RRCMSListCellItemsView.h"
 
 @interface RRCMSLisViewController ()
 
@@ -19,8 +20,9 @@
 @implementation RRCMSLisViewController
 
 //static NSString * const reuseIdentifier = @"Cell";
-static NSString * const cellIdentifierCycleView  = @"RRCMSListCellCycleView";
-static NSString * const cellIdentifierBannerCell = @"RRCMSListCellBannerCell";
+static NSString * const lisViewCellIdentifierCycleView  = @"RRCMSListCellCycleView";
+static NSString * const lisViewCellIdentifierBannerCell = @"RRCMSListCellBannerCell";
+static NSString * const lisViewCellIdentifierItemsCell  = @"RRCMSListCellItemsView";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,9 +44,11 @@ static NSString * const cellIdentifierBannerCell = @"RRCMSListCellBannerCell";
 //    RRCMSCellLayout *layout = [[RRCMSCellLayout alloc] init];
 //    [self.collectionView setCollectionViewLayout:layout animated:YES];
     
-    [self.collectionView registerClass:[RRCMSListCellCycleView class] forCellWithReuseIdentifier:cellIdentifierCycleView];
+    [self.collectionView registerClass:[RRCMSListCellCycleView class] forCellWithReuseIdentifier:lisViewCellIdentifierCycleView];
     
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RRCMSListCellBannerCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellIdentifierBannerCell];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RRCMSListCellBannerCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:lisViewCellIdentifierBannerCell];
+    
+    [self.collectionView registerClass:[RRCMSListCellItemsView class] forCellWithReuseIdentifier:lisViewCellIdentifierItemsCell];
     
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
 
@@ -80,9 +84,10 @@ static NSString * const cellIdentifierBannerCell = @"RRCMSListCellBannerCell";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     switch (section) {
         case 0:
+        case 1:
             return 1;
         default:
-            return section;
+            return section - 1;
     }
 }
 
@@ -90,11 +95,15 @@ static NSString * const cellIdentifierBannerCell = @"RRCMSListCellBannerCell";
 //    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     if (indexPath.section == 0) {
-        RRCMSListCellCycleView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifierCycleView forIndexPath:indexPath];
+        RRCMSListCellCycleView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lisViewCellIdentifierCycleView forIndexPath:indexPath];
+        cell.dataSourceArray = self.tempArray;
+        return cell;
+    } else if (indexPath.section == 1) {
+        RRCMSListCellItemsView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lisViewCellIdentifierItemsCell forIndexPath:indexPath];
         cell.dataSourceArray = self.tempArray;
         return cell;
     } else {
-        RRCMSListCellBannerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifierBannerCell forIndexPath:indexPath];
+        RRCMSListCellBannerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lisViewCellIdentifierBannerCell forIndexPath:indexPath];
         cell.imageURLString = self.tempArray[indexPath.item];
         return cell;
     }

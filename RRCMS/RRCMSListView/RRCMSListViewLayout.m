@@ -65,27 +65,23 @@
     
     switch (indexPath.section) {
         case 0:
-            attrs.frame = CGRectMake(0, 0, viewWidth, sectionHeight);
-            break;
         case 1:
-            attrs.frame = CGRectMake(0, indexPath.section * (sectionHeight + 40) + 0, viewWidth, sectionHeight);
-            break;
         case 2:
-            attrs.frame = CGRectMake(indexPath.item * halfViewWidth, indexPath.section * (sectionHeight + 40) + 0, halfViewWidth, sectionHeight);
+            attrs.frame = CGRectMake(0, indexPath.section * (sectionHeight + 40), viewWidth, sectionHeight);
             break;
         case 3:
+            attrs.frame = CGRectMake(indexPath.item * halfViewWidth, indexPath.section * (sectionHeight + 40), halfViewWidth, sectionHeight);
+            break;
+        case 4:
             switch (indexPath.item) {
                 case 0:
-                    attrs.frame = CGRectMake(indexPath.item * halfViewWidth, indexPath.section * (sectionHeight + 40) + 0, halfViewWidth, sectionHeight);
+                    attrs.frame = CGRectMake(indexPath.item * halfViewWidth, indexPath.section * (sectionHeight + 40), halfViewWidth, sectionHeight);
                     break;
                 default:
                     attrs.frame = CGRectMake(halfViewWidth, indexPath.section * (sectionHeight + 40) + (indexPath.item - 1) * halfHeight, halfViewWidth, halfHeight);
                     break;
             }
             break;
-//        case 4:
-//            attrs.frame = CGRectMake(0, 0, viewWidth, 200);
-//            break;
         default:
             attrs.frame = CGRectMake((indexPath.item % 2) * halfViewWidth, indexPath.section * (sectionHeight + 40) + indexPath.item / 2 * halfHeight, halfViewWidth, halfHeight);
             break;
