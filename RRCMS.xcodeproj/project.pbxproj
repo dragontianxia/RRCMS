@@ -34,6 +34,7 @@
 		E4B61E351EBC596700C4E684 /* RRCMSItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B61E331EBC596700C4E684 /* RRCMSItemCell.xib */; };
 		E4B61E381EBC66AB00C4E684 /* RRCMSListCellItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */; };
 		E4B9F3BE1EB884F400688585 /* shop.json in Resources */ = {isa = PBXBuildFile; fileRef = E4B9F3BD1EB884F400688585 /* shop.json */; };
+		E4E5BA141ECC4DE600655965 /* RRStickSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */; };
 		ECA1ED60DC682897E352E652 /* libPods-RRCMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BADAFFE2E6DD0D48A1515849 /* libPods-RRCMS.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,8 @@
 		E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSListCellItemsView.m; sourceTree = "<group>"; };
 		E4B9F3BD1EB884F400688585 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
 		E4E5B9F31ECC471D00655965 /* RRCMSPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSPrefix.pch; sourceTree = "<group>"; };
+		E4E5BA121ECC4DE600655965 /* RRStickSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentView.h; sourceTree = "<group>"; };
+		E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentView.m; sourceTree = "<group>"; };
 		EB273D50DAC3CB1F2D01F217 /* Pods-RRCMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRCMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RRCMS/Pods-RRCMS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +170,8 @@
 				E4797EEF1EAEF10700A60646 /* Assets.xcassets */,
 				E4797EF11EAEF10700A60646 /* LaunchScreen.storyboard */,
 				E4797EEC1EAEF10700A60646 /* Main.storyboard */,
+				E4E5BA121ECC4DE600655965 /* RRStickSegmentView.h */,
+				E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */,
 				E42EA5871EC9AC8000AC42CA /* RRCMSWaresView */,
 				E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */,
 				E4B61E171EBB32FC00C4E684 /* RRCMSListView */,
@@ -269,12 +274,14 @@
 		E4797ED81EAEF10700A60646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RR;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Ron;
 				TargetAttributes = {
 					E4797EDF1EAEF10700A60646 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 7YZU9ZP4GD;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -370,6 +377,7 @@
 				E4B61E231EBB32FC00C4E684 /* RRCMSListViewLayout.m in Sources */,
 				E42EA5EE1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m in Sources */,
 				E42EA5E81ECAF21E00AC42CA /* UIView+YCExtention.m in Sources */,
+				E4E5BA141ECC4DE600655965 /* RRStickSegmentView.m in Sources */,
 				E4B61E0F1EBB315A00C4E684 /* RRCMSContentViewCell.m in Sources */,
 				E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */,
 				E4797F151EAF237E00A60646 /* RRSegmentController.m in Sources */,
@@ -452,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -495,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,12 +517,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7YZU9ZP4GD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RRCMS/$(PROJECT_NAME)Prefix.pch";
 				INFOPLIST_FILE = RRCMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.long.RRCMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.RRCMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -526,12 +535,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7YZU9ZP4GD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RRCMS/$(PROJECT_NAME)Prefix.pch";
 				INFOPLIST_FILE = RRCMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.long.RRCMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ron.RRCMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
