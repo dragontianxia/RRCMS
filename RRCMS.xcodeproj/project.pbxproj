@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42EA5E81ECAF21E00AC42CA /* UIView+YCExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5E71ECAF21E00AC42CA /* UIView+YCExtention.m */; };
+		E42EA5EE1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5ED1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m */; };
+		E42EA5F21ECBED2E00AC42CA /* RRCMSWaresCellVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5F01ECBED2E00AC42CA /* RRCMSWaresCellVertical.m */; };
+		E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F11ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib */; };
+		E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */; };
+		E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */; };
 		E4797EE51EAEF10700A60646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE41EAEF10700A60646 /* main.m */; };
 		E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE71EAEF10700A60646 /* AppDelegate.m */; };
 		E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EEA1EAEF10700A60646 /* ViewController.m */; };
@@ -34,6 +40,16 @@
 /* Begin PBXFileReference section */
 		BADAFFE2E6DD0D48A1515849 /* libPods-RRCMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RRCMS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D775E169EA556B97C2068440 /* Pods-RRCMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRCMS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RRCMS/Pods-RRCMS.release.xcconfig"; sourceTree = "<group>"; };
+		E42EA5E61ECAF21E00AC42CA /* UIView+YCExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YCExtention.h"; sourceTree = "<group>"; };
+		E42EA5E71ECAF21E00AC42CA /* UIView+YCExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCExtention.m"; sourceTree = "<group>"; };
+		E42EA5EC1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresBaseCell.h; sourceTree = "<group>"; };
+		E42EA5ED1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresBaseCell.m; sourceTree = "<group>"; };
+		E42EA5EF1ECBED2E00AC42CA /* RRCMSWaresCellVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresCellVertical.h; sourceTree = "<group>"; };
+		E42EA5F01ECBED2E00AC42CA /* RRCMSWaresCellVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresCellVertical.m; sourceTree = "<group>"; };
+		E42EA5F11ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresCellVertical.xib; sourceTree = "<group>"; };
+		E42EA5F41ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresCellHorizontal.h; sourceTree = "<group>"; };
+		E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresCellHorizontal.m; sourceTree = "<group>"; };
+		E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresCellHorizontal.xib; sourceTree = "<group>"; };
 		E4797EE01EAEF10700A60646 /* RRCMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRCMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4797EE41EAEF10700A60646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4797EE61EAEF10700A60646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +87,7 @@
 		E4B61E361EBC66AB00C4E684 /* RRCMSListCellItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSListCellItemsView.h; sourceTree = "<group>"; };
 		E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSListCellItemsView.m; sourceTree = "<group>"; };
 		E4B9F3BD1EB884F400688585 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
+		E4E5B9F31ECC471D00655965 /* RRCMSPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSPrefix.pch; sourceTree = "<group>"; };
 		EB273D50DAC3CB1F2D01F217 /* Pods-RRCMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRCMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RRCMS/Pods-RRCMS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +120,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E42EA5871EC9AC8000AC42CA /* RRCMSWaresView */ = {
+			isa = PBXGroup;
+			children = (
+				E42EA5EC1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.h */,
+				E42EA5ED1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m */,
+				E42EA5EF1ECBED2E00AC42CA /* RRCMSWaresCellVertical.h */,
+				E42EA5F01ECBED2E00AC42CA /* RRCMSWaresCellVertical.m */,
+				E42EA5F11ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib */,
+				E42EA5F41ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.h */,
+				E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */,
+				E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */,
+			);
+			path = RRCMSWaresView;
+			sourceTree = "<group>";
+		};
 		E4797ED71EAEF10700A60646 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +156,8 @@
 		E4797EE21EAEF10700A60646 /* RRCMS */ = {
 			isa = PBXGroup;
 			children = (
+				E42EA5E61ECAF21E00AC42CA /* UIView+YCExtention.h */,
+				E42EA5E71ECAF21E00AC42CA /* UIView+YCExtention.m */,
 				E4797EE61EAEF10700A60646 /* AppDelegate.h */,
 				E4797EE91EAEF10700A60646 /* ViewController.h */,
 				E4B9F3BD1EB884F400688585 /* shop.json */,
@@ -133,6 +167,7 @@
 				E4797EEF1EAEF10700A60646 /* Assets.xcassets */,
 				E4797EF11EAEF10700A60646 /* LaunchScreen.storyboard */,
 				E4797EEC1EAEF10700A60646 /* Main.storyboard */,
+				E42EA5871EC9AC8000AC42CA /* RRCMSWaresView */,
 				E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */,
 				E4B61E171EBB32FC00C4E684 /* RRCMSListView */,
 				E4B61DFB1EBB315A00C4E684 /* RRCMSContentView */,
@@ -146,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E4797EE41EAEF10700A60646 /* main.m */,
+				E4E5B9F31ECC471D00655965 /* RRCMSPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +307,8 @@
 				E4797EF31EAEF10700A60646 /* LaunchScreen.storyboard in Resources */,
 				E4797EF01EAEF10700A60646 /* Assets.xcassets in Resources */,
 				E4797EEE1EAEF10700A60646 /* Main.storyboard in Resources */,
+				E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */,
+				E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B61E231EBB32FC00C4E684 /* RRCMSListViewLayout.m in Sources */,
+				E42EA5EE1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m in Sources */,
+				E42EA5E81ECAF21E00AC42CA /* UIView+YCExtention.m in Sources */,
 				E4B61E0F1EBB315A00C4E684 /* RRCMSContentViewCell.m in Sources */,
+				E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */,
 				E4797F151EAF237E00A60646 /* RRSegmentController.m in Sources */,
 				E4B61E0E1EBB315A00C4E684 /* RRCMSContentView.m in Sources */,
 				E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */,
@@ -340,6 +381,7 @@
 				E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */,
 				E4B61E241EBB32FC00C4E684 /* RRCMSListCellBannerCell.m in Sources */,
 				E4B61E261EBB32FC00C4E684 /* RRCMSListCellBannerView.m in Sources */,
+				E42EA5F21ECBED2E00AC42CA /* RRCMSWaresCellVertical.m in Sources */,
 				E4B61E301EBC579C00C4E684 /* RRCMSItemsView.m in Sources */,
 				E4797EE51EAEF10700A60646 /* main.m in Sources */,
 				E4B61E281EBB32FC00C4E684 /* RRCMSLisViewController.m in Sources */,
@@ -466,7 +508,10 @@
 			baseConfigurationReference = EB273D50DAC3CB1F2D01F217 /* Pods-RRCMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RRCMS/$(PROJECT_NAME)Prefix.pch";
 				INFOPLIST_FILE = RRCMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.long.RRCMS;
@@ -480,7 +525,10 @@
 			baseConfigurationReference = D775E169EA556B97C2068440 /* Pods-RRCMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RRCMS/$(PROJECT_NAME)Prefix.pch";
 				INFOPLIST_FILE = RRCMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.long.RRCMS;

@@ -43,7 +43,7 @@ static NSString * const contentViewCellIdentifier = @"RRCollectionCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     RRCMSContentViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:contentViewCellIdentifier forIndexPath:indexPath];
-    cell.dataSourceArray = @[@"xx", @"yy", @"zz", @"xx", @"yy", @"zz"];
+    cell.dataSourceArray = @[@"xx", @"yy", @"zz", @"xx", @"yy"];//, @"zz"];
     return cell;
 }
 

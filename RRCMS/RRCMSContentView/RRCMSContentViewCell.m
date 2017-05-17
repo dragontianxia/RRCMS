@@ -26,7 +26,7 @@
 }
 
 - (void)loadListView {
-    self.listVC = [[RRCMSLisViewController alloc] initWithCollectionViewLayout:[[RRCMSListViewLayout alloc] init]];
+    self.listVC = [[RRCMSLisViewController alloc] init];
     [self.contentView addSubview:_listVC.view];
 }
 

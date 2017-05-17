@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RRCMSWaresCellVertical" id="UUa-2L-x9z" customClass="RRCMSWaresCellVertical">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="310"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-WC-Sa4">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OVp-WC-Sa4" secondAttribute="height" multiplier="1:1" id="R7X-8G-Wgd"/>
+                            <constraint firstAttribute="width" constant="180" id="zr3-Cv-zd1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈佛中国史 6册 哈佛大学出版社镇社之宝" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmu-Pk-DQh">
+                        <rect key="frame" x="0.0" y="180" width="180" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="EFl-cp-Q54"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10年筹备，5年编辑 作者均为西方汉学大家" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsV-pi-mHe">
+                        <rect key="frame" x="0.0" y="240" width="180" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥286" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-5m-CLz">
+                        <rect key="frame" x="0.0" y="280" width="180" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="EJr-JA-3a0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QsV-pi-mHe" secondAttribute="trailing" id="8qy-uW-yeg"/>
+                <constraint firstItem="OVp-WC-Sa4" firstAttribute="top" secondItem="UUa-2L-x9z" secondAttribute="top" id="DnP-XW-kDy"/>
+                <constraint firstAttribute="trailing" secondItem="Vmu-Pk-DQh" secondAttribute="trailing" id="Fkc-1H-0Kt"/>
+                <constraint firstItem="Vmu-Pk-DQh" firstAttribute="top" secondItem="OVp-WC-Sa4" secondAttribute="bottom" id="Lrr-Zm-vgm"/>
+                <constraint firstItem="fFd-5m-CLz" firstAttribute="leading" secondItem="UUa-2L-x9z" secondAttribute="leading" id="ZRn-ZQ-w6y"/>
+                <constraint firstItem="Vmu-Pk-DQh" firstAttribute="leading" secondItem="UUa-2L-x9z" secondAttribute="leading" id="bwJ-Du-4qf"/>
+                <constraint firstAttribute="trailing" secondItem="fFd-5m-CLz" secondAttribute="trailing" id="dL2-UV-NS4"/>
+                <constraint firstItem="OVp-WC-Sa4" firstAttribute="leading" secondItem="UUa-2L-x9z" secondAttribute="leading" id="hg9-63-Rrh"/>
+                <constraint firstAttribute="trailing" secondItem="OVp-WC-Sa4" secondAttribute="trailing" id="jIB-NN-kPs"/>
+                <constraint firstAttribute="bottom" secondItem="fFd-5m-CLz" secondAttribute="bottom" id="veK-Lq-vMW"/>
+                <constraint firstItem="QsV-pi-mHe" firstAttribute="top" secondItem="Vmu-Pk-DQh" secondAttribute="bottom" id="w0N-Bt-ZEs"/>
+                <constraint firstItem="fFd-5m-CLz" firstAttribute="top" secondItem="QsV-pi-mHe" secondAttribute="bottom" id="wnp-cJ-Eip"/>
+                <constraint firstItem="QsV-pi-mHe" firstAttribute="leading" secondItem="UUa-2L-x9z" secondAttribute="leading" id="yyl-dU-Zlw"/>
+            </constraints>
+            <connections>
+                <outlet property="waresDescriptionLabel" destination="QsV-pi-mHe" id="O4a-bq-E1a"/>
+                <outlet property="waresImageView" destination="OVp-WC-Sa4" id="bfs-Iy-Vrg"/>
+                <outlet property="waresNameLabel" destination="Vmu-Pk-DQh" id="mcD-Po-S7Q"/>
+                <outlet property="waresPriceLabel" destination="fFd-5m-CLz" id="maw-pB-JH2"/>
+            </connections>
+            <point key="canvasLocation" x="-235" y="44"/>
+        </collectionViewCell>
+    </objects>
+</document>

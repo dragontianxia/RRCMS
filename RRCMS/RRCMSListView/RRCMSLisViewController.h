@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RRCMSLisViewController : UICollectionViewController
+@interface RRCMSLisViewController : UIViewController
 
 @property (copy, nonatomic) NSArray *dataSourceArray;
 

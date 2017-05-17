@@ -4,7 +4,7 @@
 //
 //  Created by Ron on 5/5/17.
 //  Copyright © 2017 Ron. All rights reserved.
-//
+//  商品列表 //多列，1行
 
 #import "RRCMSItemsView.h"
 #import "RRCMSItemCell.h"
