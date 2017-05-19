@@ -9,6 +9,7 @@
 #import "RRSegmentController.h"
 #import "RRSegmentView.h"
 #import "RRCMSContentView.h"
+#import "RRStickSegmentView.h"
 
 static CGFloat const kSegmentViewHeight = 44;
 
@@ -34,13 +35,24 @@ static CGFloat const kSegmentViewHeight = 44;
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    self.titleDataSourceArray = @[@"首页", @"数码家电", @"服饰美妆", @"图书文创", @"家居生活", @"美食厨房"];
-    
     kScreenWidth = [[UIScreen mainScreen] bounds].size.width;
     kContentHeight = self.view.frame.size.height - 64 - kSegmentViewHeight;
+
+//    self.titleDataSourceArray = @[@"首页", @"数码家电", @"服饰美妆", @"图书文创", @"家居生活", @"美食厨房"];
+//    [self loadSegmentView];
     
-    [self loadSegmentView];
-    [self loadContentCollectionView];
+    // @"<#name#>", @"<#name#>", @"<#name#>", @"<#name#>", @"<#name#>", @"<#name#>", @"<#name#>",
+    self.titleDataSourceArray = @[
+                                  @"首页", @"特惠", @"礼物", @"服饰", @"珠宝", @"美妆", @"洗护",
+                                  @"数码", @"家电", @"家居", @"家具", @"器物", @"旅行", @"运动",
+                                  @"美食", @"餐厨", @"母婴", @"爱宠", @"图书", @"文房", @"全部",
+                                  ];
+    [self loadStickSegmentView];
+}
+
+- (void)loadStickSegmentView {
+    RRStickSegmentView *stickView = [[RRStickSegmentView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, 44 * 3 + 6) dataSourceArray:self.titleDataSourceArray];
+    [self.view addSubview:stickView];
 }
 
 #pragma mark - SegmentView
@@ -52,6 +64,8 @@ static CGFloat const kSegmentViewHeight = 44;
                                                [wSelf.contentScrollView setContentOffset:CGPointMake(selectedIndex * kScreenWidth, 0) animated:animated];
                                            }];
     [self.view addSubview:_segmentView];
+    
+    [self loadContentCollectionView];
 }
 
 #pragma mark - CollectionView

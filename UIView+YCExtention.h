@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-// 绘制1像素的线，需要的宏
-#define SINGLE_LINE_HEIGHT          (1 / [UIScreen mainScreen].scale) // 线的高度（宽度）
-#define SINGLE_LINE_ADJUST_OFFSET   ((1 / [UIScreen mainScreen].scale) / 2) // 适配不同分辨率需要做的偏移
-#define SINGLE_LINE_OFFSET          ((1 / [UIScreen mainScreen].scale) - ((1 / [UIScreen mainScreen].scale) / 2)) // 绘制细线的时候，需要减掉的高度
-
 @interface UIView (YCExtention)
 
 @property (nonatomic, assign) CGFloat x;
@@ -32,10 +27,9 @@
 @property (nonatomic, assign) CGSize size;
 
 /// 设置边角弧度
-- (void)setCornerRadius:(CGFloat)radius;
-
+- (void) setCornerRadius:(CGFloat)radius;
 /// 设置边线
-- (void)setBorderColor:(UIColor *)color width:(CGFloat)width;
+- (void) setBorderColor:(UIColor *)color width:(CGFloat)width;
 
 - (void)setTapGestureWithBlock:(void(^)())block;
 

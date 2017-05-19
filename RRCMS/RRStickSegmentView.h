@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RRStickSegmentView : UICollectionView
+@interface RRStickSegmentView : UIView
+
+- (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray;
 
 @end

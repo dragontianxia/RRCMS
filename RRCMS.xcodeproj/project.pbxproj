@@ -13,6 +13,8 @@
 		E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F11ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib */; };
 		E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */; };
 		E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */; };
+		E437A2F01ECD785D00E3A969 /* RRStickSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */; };
+		E437A2F11ECD785D00E3A969 /* RRStickSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */; };
 		E4797EE51EAEF10700A60646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE41EAEF10700A60646 /* main.m */; };
 		E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE71EAEF10700A60646 /* AppDelegate.m */; };
 		E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EEA1EAEF10700A60646 /* ViewController.m */; };
@@ -51,6 +53,9 @@
 		E42EA5F41ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresCellHorizontal.h; sourceTree = "<group>"; };
 		E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresCellHorizontal.m; sourceTree = "<group>"; };
 		E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresCellHorizontal.xib; sourceTree = "<group>"; };
+		E437A2ED1ECD785D00E3A969 /* RRStickSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentCell.h; sourceTree = "<group>"; };
+		E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentCell.m; sourceTree = "<group>"; };
+		E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRStickSegmentCell.xib; sourceTree = "<group>"; };
 		E4797EE01EAEF10700A60646 /* RRCMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRCMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4797EE41EAEF10700A60646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4797EE61EAEF10700A60646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +177,9 @@
 				E4797EEC1EAEF10700A60646 /* Main.storyboard */,
 				E4E5BA121ECC4DE600655965 /* RRStickSegmentView.h */,
 				E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */,
+				E437A2ED1ECD785D00E3A969 /* RRStickSegmentCell.h */,
+				E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */,
+				E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */,
 				E42EA5871EC9AC8000AC42CA /* RRCMSWaresView */,
 				E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */,
 				E4B61E171EBB32FC00C4E684 /* RRCMSListView */,
@@ -316,6 +324,7 @@
 				E4797EEE1EAEF10700A60646 /* Main.storyboard in Resources */,
 				E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */,
 				E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */,
+				E437A2F11ECD785D00E3A969 /* RRStickSegmentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +385,7 @@
 			files = (
 				E4B61E231EBB32FC00C4E684 /* RRCMSListViewLayout.m in Sources */,
 				E42EA5EE1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m in Sources */,
+				E437A2F01ECD785D00E3A969 /* RRStickSegmentCell.m in Sources */,
 				E42EA5E81ECAF21E00AC42CA /* UIView+YCExtention.m in Sources */,
 				E4E5BA141ECC4DE600655965 /* RRStickSegmentView.m in Sources */,
 				E4B61E0F1EBB315A00C4E684 /* RRCMSContentViewCell.m in Sources */,

@@ -36,7 +36,7 @@ static NSString * const contentViewCellIdentifier = @"RRCollectionCell";
     return self;
 }
 
-#pragma mark UICollectionViewDataSource
+#pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSourceArray.count;
 }
@@ -47,7 +47,7 @@ static NSString * const contentViewCellIdentifier = @"RRCollectionCell";
     return cell;
 }
 
-#pragma mark UICollectionViewDelegateFlowLayout
+#pragma mark - <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
 //    return CGSizeMake(self.bounds.size.width - 10, self.bounds.size.height);
     return self.bounds.size;
