@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^RRStickSegmentViewHandler)(NSInteger selectedIndex);
+
 @interface RRStickSegmentView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray;
+- (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray itemSelected:(RRStickSegmentViewHandler)handler;
+
+//- (void)onClickExpandButton;
+
+- (void)contentViewScrollOffsetX:(CGFloat)offsetX;
 
 @end

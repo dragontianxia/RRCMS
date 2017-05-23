@@ -19,6 +19,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+//    [self setBackgroundColor:[UIColor yellowColor]];
+//    [self.nameLabel setBackgroundColor:[UIColor greenColor]];
 }
 
 - (void)setSelected:(BOOL)selected {

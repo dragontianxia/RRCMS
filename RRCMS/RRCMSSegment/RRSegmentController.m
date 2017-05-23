@@ -20,8 +20,11 @@ static CGFloat const kSegmentViewHeight = 44;
 
 /// 顶部 segment 数组
 @property (strong, nonatomic) NSArray *titleDataSourceArray;
+
 /// 顶部 segment 控件
 @property (strong, nonatomic) RRSegmentView *segmentView;
+@property (nonatomic, strong) RRStickSegmentView *stickSegmentView;
+
 
 /// 内容 控件
 @property (strong, nonatomic) RRCMSContentView *contentCollectionView;
@@ -51,17 +54,22 @@ static CGFloat const kSegmentViewHeight = 44;
 }
 
 - (void)loadStickSegmentView {
-    RRStickSegmentView *stickView = [[RRStickSegmentView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, 44 * 3 + 6) dataSourceArray:self.titleDataSourceArray];
-    [self.view addSubview:stickView];
+    [self loadContentCollectionView];
+    
+    __weak typeof(self) wSelf = self;
+    self.stickSegmentView = [[RRStickSegmentView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, kSegmentViewHeight + 2) dataSourceArray:self.titleDataSourceArray itemSelected:^(NSInteger selectedIndex) {
+        [wSelf.contentCollectionView setContentOffset:CGPointMake(selectedIndex * kScreenWidth, 0) animated:YES];
+    }];
+    [self.view addSubview:self.stickSegmentView];
 }
 
 #pragma mark - SegmentView
 - (void)loadSegmentView {
     __weak typeof(self) wSelf = self;
-    _segmentView = [[RRSegmentView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, kSegmentViewHeight)
+    _segmentView = [[RRSegmentView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, kSegmentViewHeight)
                                              titleArray:self.titleDataSourceArray
                                            itemSelected:^(NSInteger selectedIndex, BOOL animated) {
-                                               [wSelf.contentScrollView setContentOffset:CGPointMake(selectedIndex * kScreenWidth, 0) animated:animated];
+                                               [wSelf.contentCollectionView setContentOffset:CGPointMake(selectedIndex * kScreenWidth, 0) animated:animated];
                                            }];
     [self.view addSubview:_segmentView];
     
@@ -78,6 +86,7 @@ static CGFloat const kSegmentViewHeight = 44;
 
 - (void)cmsContentViewScrollOffsetX:(CGFloat)offsetX {
     [_segmentView contentViewScrollOffsetX:offsetX];
+    [self.stickSegmentView contentViewScrollOffsetX:offsetX];
 }
 
 #pragma mark - ScrollViewDemo
@@ -112,7 +121,5 @@ static CGFloat const kSegmentViewHeight = 44;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
 
 @end

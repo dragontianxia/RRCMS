@@ -13,6 +13,12 @@
 #define SINGLE_LINE_ADJUST_OFFSET   ((1 / [UIScreen mainScreen].scale) / 2) // 适配不同分辨率需要做的偏移
 #define SINGLE_LINE_OFFSET          ((1 / [UIScreen mainScreen].scale) - ((1 / [UIScreen mainScreen].scale) / 2)) // 绘制细线的时候，需要减掉的高度
 
+/// 宽
+#define kFBaseWidth [[UIScreen mainScreen]bounds].size.width
+
+/// 高
+#define kFBaseHeight [[UIScreen mainScreen]bounds].size.height
+
 @interface UIView (YCExtention)
 
 @property (nonatomic, assign) CGFloat x;
