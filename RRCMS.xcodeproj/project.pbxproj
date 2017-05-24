@@ -15,6 +15,10 @@
 		E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */; };
 		E437A2F01ECD785D00E3A969 /* RRStickSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */; };
 		E437A2F11ECD785D00E3A969 /* RRStickSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */; };
+		E440171C1ED56AA10011BD4F /* RRCMSWaresHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E440171A1ED56AA10011BD4F /* RRCMSWaresHeader.m */; };
+		E440171D1ED56AA10011BD4F /* RRCMSWaresHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E440171B1ED56AA10011BD4F /* RRCMSWaresHeader.xib */; };
+		E44017211ED56C510011BD4F /* RRCMSWaresFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E440171F1ED56C510011BD4F /* RRCMSWaresFooter.m */; };
+		E44017221ED56C510011BD4F /* RRCMSWaresFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44017201ED56C510011BD4F /* RRCMSWaresFooter.xib */; };
 		E4797EE51EAEF10700A60646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE41EAEF10700A60646 /* main.m */; };
 		E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE71EAEF10700A60646 /* AppDelegate.m */; };
 		E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EEA1EAEF10700A60646 /* ViewController.m */; };
@@ -58,6 +62,12 @@
 		E437A2ED1ECD785D00E3A969 /* RRStickSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentCell.h; sourceTree = "<group>"; };
 		E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentCell.m; sourceTree = "<group>"; };
 		E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRStickSegmentCell.xib; sourceTree = "<group>"; };
+		E44017191ED56AA10011BD4F /* RRCMSWaresHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresHeader.h; sourceTree = "<group>"; };
+		E440171A1ED56AA10011BD4F /* RRCMSWaresHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresHeader.m; sourceTree = "<group>"; };
+		E440171B1ED56AA10011BD4F /* RRCMSWaresHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresHeader.xib; sourceTree = "<group>"; };
+		E440171E1ED56C510011BD4F /* RRCMSWaresFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresFooter.h; sourceTree = "<group>"; };
+		E440171F1ED56C510011BD4F /* RRCMSWaresFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresFooter.m; sourceTree = "<group>"; };
+		E44017201ED56C510011BD4F /* RRCMSWaresFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresFooter.xib; sourceTree = "<group>"; };
 		E4797EE01EAEF10700A60646 /* RRCMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRCMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4797EE41EAEF10700A60646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4797EE61EAEF10700A60646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +155,12 @@
 				E42EA5F41ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.h */,
 				E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */,
 				E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */,
+				E44017191ED56AA10011BD4F /* RRCMSWaresHeader.h */,
+				E440171A1ED56AA10011BD4F /* RRCMSWaresHeader.m */,
+				E440171B1ED56AA10011BD4F /* RRCMSWaresHeader.xib */,
+				E440171E1ED56C510011BD4F /* RRCMSWaresFooter.h */,
+				E440171F1ED56C510011BD4F /* RRCMSWaresFooter.m */,
+				E44017201ED56C510011BD4F /* RRCMSWaresFooter.xib */,
 			);
 			path = RRCMSWaresView;
 			sourceTree = "<group>";
@@ -327,10 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B61E351EBC596700C4E684 /* RRCMSItemCell.xib in Resources */,
+				E44017221ED56C510011BD4F /* RRCMSWaresFooter.xib in Resources */,
 				E4B61E251EBB32FC00C4E684 /* RRCMSListCellBannerCell.xib in Resources */,
 				E4B9F3BE1EB884F400688585 /* shop.json in Resources */,
 				E4797EF31EAEF10700A60646 /* LaunchScreen.storyboard in Resources */,
 				E4797EF01EAEF10700A60646 /* Assets.xcassets in Resources */,
+				E440171D1ED56AA10011BD4F /* RRCMSWaresHeader.xib in Resources */,
 				E4797EEE1EAEF10700A60646 /* Main.storyboard in Resources */,
 				E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */,
 				E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */,
@@ -408,7 +426,9 @@
 				E4AEEFD21ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m in Sources */,
 				E4B61E341EBC596700C4E684 /* RRCMSItemCell.m in Sources */,
 				E4B61E271EBB32FC00C4E684 /* RRCMSListCellCycleView.m in Sources */,
+				E440171C1ED56AA10011BD4F /* RRCMSWaresHeader.m in Sources */,
 				E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */,
+				E44017211ED56C510011BD4F /* RRCMSWaresFooter.m in Sources */,
 				E4B61E241EBB32FC00C4E684 /* RRCMSListCellBannerCell.m in Sources */,
 				E4B61E261EBB32FC00C4E684 /* RRCMSListCellBannerView.m in Sources */,
 				E42EA5F21ECBED2E00AC42CA /* RRCMSWaresCellVertical.m in Sources */,

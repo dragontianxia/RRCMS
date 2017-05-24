@@ -10,8 +10,11 @@
 #import "RRCMSListCellCycleView.h"
 #import "RRCMSListCellBannerCell.h"
 #import "RRCMSListCellItemsView.h"
+
 #import "RRCMSWaresCellVertical.h"
 #import "RRCMSWaresCellHorizontal.h"
+#import "RRCMSWaresHeader.h"
+#import "RRCMSWaresFooter.h"
 
 @interface RRCMSLisViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -73,6 +76,10 @@ static CGFloat kItemSpacing = 10.0f;
     
     // 一行多列
     [self.collectionView registerClass:[RRCMSListCellItemsView class] forCellWithReuseIdentifier:listViewCellIdentifierItemsCell];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RRCMSWaresHeader class]) bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:@"UICollectionElementKindSectionHeader" withReuseIdentifier:[RRCMSWaresHeader description]];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RRCMSWaresFooter class]) bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:@"UICollectionElementKindSectionFooter" withReuseIdentifier:[RRCMSWaresFooter description]];
     
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
 
@@ -152,6 +159,16 @@ static CGFloat kItemSpacing = 10.0f;
         default:
             return nil;
             break;
+    }
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section < 3) return nil;
+    
+    if ([kind isEqualToString:@"UICollectionElementKindSectionHeader"]) {
+        return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[RRCMSWaresHeader description] forIndexPath:indexPath];
+    } else {
+        return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[RRCMSWaresFooter description] forIndexPath:indexPath];
     }
 }
 

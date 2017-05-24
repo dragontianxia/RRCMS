@@ -6,6 +6,8 @@
 //  Copyright © 2017 Ron. All rights reserved.
 //
 
+#define showThreePara(var1, var2, var3) (var1 + var2 + var3)
+
 #import "RRStickSegmentView.h"
 #import "RRStickSegmentCell.h"
 #import "RRStickSegmentMultiRowLayout.h"
@@ -40,6 +42,7 @@ static NSString * const segmentViewCellIdentifier = @"RRStickSegmentCell";
 
 - (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray itemSelected:(RRStickSegmentViewHandler)handler {
     if (self = [super initWithFrame:frame]) {
+        showThreePara(1, 2, 3);
         
         [self setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
         
