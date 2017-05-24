@@ -13,12 +13,15 @@
 		E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F11ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib */; };
 		E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */; };
 		E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */; };
-		E437A2F01ECD785D00E3A969 /* RRStickSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */; };
-		E437A2F11ECD785D00E3A969 /* RRStickSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */; };
 		E440171C1ED56AA10011BD4F /* RRCMSWaresHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E440171A1ED56AA10011BD4F /* RRCMSWaresHeader.m */; };
 		E440171D1ED56AA10011BD4F /* RRCMSWaresHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E440171B1ED56AA10011BD4F /* RRCMSWaresHeader.xib */; };
 		E44017211ED56C510011BD4F /* RRCMSWaresFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E440171F1ED56C510011BD4F /* RRCMSWaresFooter.m */; };
 		E44017221ED56C510011BD4F /* RRCMSWaresFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44017201ED56C510011BD4F /* RRCMSWaresFooter.xib */; };
+		E440172D1ED57F220011BD4F /* RRStickSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E44017251ED57F220011BD4F /* RRStickSegmentCell.m */; };
+		E440172E1ED57F220011BD4F /* RRStickSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44017261ED57F220011BD4F /* RRStickSegmentCell.xib */; };
+		E440172F1ED57F220011BD4F /* RRStickSegmentMultiRowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E44017281ED57F220011BD4F /* RRStickSegmentMultiRowLayout.m */; };
+		E44017301ED57F220011BD4F /* RRStickSegmentSingleRowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E440172A1ED57F220011BD4F /* RRStickSegmentSingleRowLayout.m */; };
+		E44017311ED57F220011BD4F /* RRStickSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E440172C1ED57F220011BD4F /* RRStickSegmentView.m */; };
 		E4797EE51EAEF10700A60646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE41EAEF10700A60646 /* main.m */; };
 		E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EE71EAEF10700A60646 /* AppDelegate.m */; };
 		E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797EEA1EAEF10700A60646 /* ViewController.m */; };
@@ -27,8 +30,6 @@
 		E4797EF31EAEF10700A60646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4797EF11EAEF10700A60646 /* LaunchScreen.storyboard */; };
 		E4797F151EAF237E00A60646 /* RRSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797F0F1EAF237E00A60646 /* RRSegmentController.m */; };
 		E4797F161EAF237E00A60646 /* RRSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4797F111EAF237E00A60646 /* RRSegmentView.m */; };
-		E4AEEFD21ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEEFD11ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m */; };
-		E4AEEFD51ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEEFD41ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.m */; };
 		E4B61E0E1EBB315A00C4E684 /* RRCMSContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61DFD1EBB315A00C4E684 /* RRCMSContentView.m */; };
 		E4B61E0F1EBB315A00C4E684 /* RRCMSContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61DFF1EBB315A00C4E684 /* RRCMSContentViewCell.m */; };
 		E4B61E231EBB32FC00C4E684 /* RRCMSListViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E191EBB32FC00C4E684 /* RRCMSListViewLayout.m */; };
@@ -42,7 +43,6 @@
 		E4B61E351EBC596700C4E684 /* RRCMSItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B61E331EBC596700C4E684 /* RRCMSItemCell.xib */; };
 		E4B61E381EBC66AB00C4E684 /* RRCMSListCellItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */; };
 		E4B9F3BE1EB884F400688585 /* shop.json in Resources */ = {isa = PBXBuildFile; fileRef = E4B9F3BD1EB884F400688585 /* shop.json */; };
-		E4E5BA141ECC4DE600655965 /* RRStickSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */; };
 		ECA1ED60DC682897E352E652 /* libPods-RRCMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BADAFFE2E6DD0D48A1515849 /* libPods-RRCMS.a */; };
 /* End PBXBuildFile section */
 
@@ -59,15 +59,21 @@
 		E42EA5F41ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresCellHorizontal.h; sourceTree = "<group>"; };
 		E42EA5F51ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresCellHorizontal.m; sourceTree = "<group>"; };
 		E42EA5F61ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresCellHorizontal.xib; sourceTree = "<group>"; };
-		E437A2ED1ECD785D00E3A969 /* RRStickSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentCell.h; sourceTree = "<group>"; };
-		E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentCell.m; sourceTree = "<group>"; };
-		E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRStickSegmentCell.xib; sourceTree = "<group>"; };
 		E44017191ED56AA10011BD4F /* RRCMSWaresHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresHeader.h; sourceTree = "<group>"; };
 		E440171A1ED56AA10011BD4F /* RRCMSWaresHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresHeader.m; sourceTree = "<group>"; };
 		E440171B1ED56AA10011BD4F /* RRCMSWaresHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresHeader.xib; sourceTree = "<group>"; };
 		E440171E1ED56C510011BD4F /* RRCMSWaresFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSWaresFooter.h; sourceTree = "<group>"; };
 		E440171F1ED56C510011BD4F /* RRCMSWaresFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSWaresFooter.m; sourceTree = "<group>"; };
 		E44017201ED56C510011BD4F /* RRCMSWaresFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRCMSWaresFooter.xib; sourceTree = "<group>"; };
+		E44017241ED57F220011BD4F /* RRStickSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentCell.h; sourceTree = "<group>"; };
+		E44017251ED57F220011BD4F /* RRStickSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentCell.m; sourceTree = "<group>"; };
+		E44017261ED57F220011BD4F /* RRStickSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RRStickSegmentCell.xib; sourceTree = "<group>"; };
+		E44017271ED57F220011BD4F /* RRStickSegmentMultiRowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentMultiRowLayout.h; sourceTree = "<group>"; };
+		E44017281ED57F220011BD4F /* RRStickSegmentMultiRowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentMultiRowLayout.m; sourceTree = "<group>"; };
+		E44017291ED57F220011BD4F /* RRStickSegmentSingleRowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentSingleRowLayout.h; sourceTree = "<group>"; };
+		E440172A1ED57F220011BD4F /* RRStickSegmentSingleRowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentSingleRowLayout.m; sourceTree = "<group>"; };
+		E440172B1ED57F220011BD4F /* RRStickSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentView.h; sourceTree = "<group>"; };
+		E440172C1ED57F220011BD4F /* RRStickSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentView.m; sourceTree = "<group>"; };
 		E4797EE01EAEF10700A60646 /* RRCMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRCMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4797EE41EAEF10700A60646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4797EE61EAEF10700A60646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,10 +88,6 @@
 		E4797F0F1EAF237E00A60646 /* RRSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSegmentController.m; sourceTree = "<group>"; };
 		E4797F101EAF237E00A60646 /* RRSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRSegmentView.h; sourceTree = "<group>"; };
 		E4797F111EAF237E00A60646 /* RRSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSegmentView.m; sourceTree = "<group>"; };
-		E4AEEFD01ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentMultiRowLayout.h; sourceTree = "<group>"; };
-		E4AEEFD11ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentMultiRowLayout.m; sourceTree = "<group>"; };
-		E4AEEFD31ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentSingleRowLayout.h; sourceTree = "<group>"; };
-		E4AEEFD41ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentSingleRowLayout.m; sourceTree = "<group>"; };
 		E4B61DFC1EBB315A00C4E684 /* RRCMSContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSContentView.h; sourceTree = "<group>"; };
 		E4B61DFD1EBB315A00C4E684 /* RRCMSContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSContentView.m; sourceTree = "<group>"; };
 		E4B61DFE1EBB315A00C4E684 /* RRCMSContentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSContentViewCell.h; sourceTree = "<group>"; };
@@ -110,8 +112,6 @@
 		E4B61E371EBC66AB00C4E684 /* RRCMSListCellItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCMSListCellItemsView.m; sourceTree = "<group>"; };
 		E4B9F3BD1EB884F400688585 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
 		E4E5B9F31ECC471D00655965 /* RRCMSPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCMSPrefix.pch; sourceTree = "<group>"; };
-		E4E5BA121ECC4DE600655965 /* RRStickSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRStickSegmentView.h; sourceTree = "<group>"; };
-		E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRStickSegmentView.m; sourceTree = "<group>"; };
 		EB273D50DAC3CB1F2D01F217 /* Pods-RRCMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRCMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RRCMS/Pods-RRCMS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +165,22 @@
 			path = RRCMSWaresView;
 			sourceTree = "<group>";
 		};
+		E44017231ED57F220011BD4F /* RRStickSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				E44017241ED57F220011BD4F /* RRStickSegmentCell.h */,
+				E44017251ED57F220011BD4F /* RRStickSegmentCell.m */,
+				E44017261ED57F220011BD4F /* RRStickSegmentCell.xib */,
+				E44017271ED57F220011BD4F /* RRStickSegmentMultiRowLayout.h */,
+				E44017281ED57F220011BD4F /* RRStickSegmentMultiRowLayout.m */,
+				E44017291ED57F220011BD4F /* RRStickSegmentSingleRowLayout.h */,
+				E440172A1ED57F220011BD4F /* RRStickSegmentSingleRowLayout.m */,
+				E440172B1ED57F220011BD4F /* RRStickSegmentView.h */,
+				E440172C1ED57F220011BD4F /* RRStickSegmentView.m */,
+			);
+			path = RRStickSegmentView;
+			sourceTree = "<group>";
+		};
 		E4797ED71EAEF10700A60646 = {
 			isa = PBXGroup;
 			children = (
@@ -197,15 +213,7 @@
 				E4797EEF1EAEF10700A60646 /* Assets.xcassets */,
 				E4797EF11EAEF10700A60646 /* LaunchScreen.storyboard */,
 				E4797EEC1EAEF10700A60646 /* Main.storyboard */,
-				E4E5BA121ECC4DE600655965 /* RRStickSegmentView.h */,
-				E4E5BA131ECC4DE600655965 /* RRStickSegmentView.m */,
-				E4AEEFD01ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.h */,
-				E4AEEFD11ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m */,
-				E4AEEFD31ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.h */,
-				E4AEEFD41ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.m */,
-				E437A2ED1ECD785D00E3A969 /* RRStickSegmentCell.h */,
-				E437A2EE1ECD785D00E3A969 /* RRStickSegmentCell.m */,
-				E437A2EF1ECD785D00E3A969 /* RRStickSegmentCell.xib */,
+				E44017231ED57F220011BD4F /* RRStickSegmentView */,
 				E42EA5871EC9AC8000AC42CA /* RRCMSWaresView */,
 				E4B61E2D1EBC579B00C4E684 /* RRCMSItemsView */,
 				E4B61E171EBB32FC00C4E684 /* RRCMSListView */,
@@ -350,9 +358,9 @@
 				E4797EF01EAEF10700A60646 /* Assets.xcassets in Resources */,
 				E440171D1ED56AA10011BD4F /* RRCMSWaresHeader.xib in Resources */,
 				E4797EEE1EAEF10700A60646 /* Main.storyboard in Resources */,
+				E440172E1ED57F220011BD4F /* RRStickSegmentCell.xib in Resources */,
 				E42EA5F31ECBED2E00AC42CA /* RRCMSWaresCellVertical.xib in Resources */,
 				E42EA5F81ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.xib in Resources */,
-				E437A2F11ECD785D00E3A969 /* RRStickSegmentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,20 +421,18 @@
 			files = (
 				E4B61E231EBB32FC00C4E684 /* RRCMSListViewLayout.m in Sources */,
 				E42EA5EE1ECBEC0C00AC42CA /* RRCMSWaresBaseCell.m in Sources */,
-				E437A2F01ECD785D00E3A969 /* RRStickSegmentCell.m in Sources */,
 				E42EA5E81ECAF21E00AC42CA /* UIView+YCExtention.m in Sources */,
-				E4E5BA141ECC4DE600655965 /* RRStickSegmentView.m in Sources */,
 				E4B61E0F1EBB315A00C4E684 /* RRCMSContentViewCell.m in Sources */,
 				E42EA5F71ECBEDE800AC42CA /* RRCMSWaresCellHorizontal.m in Sources */,
 				E4797F151EAF237E00A60646 /* RRSegmentController.m in Sources */,
 				E4B61E0E1EBB315A00C4E684 /* RRCMSContentView.m in Sources */,
 				E4797EEB1EAEF10700A60646 /* ViewController.m in Sources */,
 				E4797F161EAF237E00A60646 /* RRSegmentView.m in Sources */,
-				E4AEEFD51ED2F1360098DCDF /* RRStickSegmentSingleRowLayout.m in Sources */,
-				E4AEEFD21ED2F1130098DCDF /* RRStickSegmentMultiRowLayout.m in Sources */,
 				E4B61E341EBC596700C4E684 /* RRCMSItemCell.m in Sources */,
 				E4B61E271EBB32FC00C4E684 /* RRCMSListCellCycleView.m in Sources */,
+				E440172F1ED57F220011BD4F /* RRStickSegmentMultiRowLayout.m in Sources */,
 				E440171C1ED56AA10011BD4F /* RRCMSWaresHeader.m in Sources */,
+				E44017311ED57F220011BD4F /* RRStickSegmentView.m in Sources */,
 				E4797EE81EAEF10700A60646 /* AppDelegate.m in Sources */,
 				E44017211ED56C510011BD4F /* RRCMSWaresFooter.m in Sources */,
 				E4B61E241EBB32FC00C4E684 /* RRCMSListCellBannerCell.m in Sources */,
@@ -435,7 +441,9 @@
 				E4B61E301EBC579C00C4E684 /* RRCMSItemsView.m in Sources */,
 				E4797EE51EAEF10700A60646 /* main.m in Sources */,
 				E4B61E281EBB32FC00C4E684 /* RRCMSLisViewController.m in Sources */,
+				E440172D1ED57F220011BD4F /* RRStickSegmentCell.m in Sources */,
 				E4B61E381EBC66AB00C4E684 /* RRCMSListCellItemsView.m in Sources */,
+				E44017301ED57F220011BD4F /* RRStickSegmentSingleRowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

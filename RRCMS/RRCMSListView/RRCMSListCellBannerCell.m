@@ -18,9 +18,9 @@
     
     [self setContentMode:UIViewContentModeScaleToFill];
     
-    [self setBackgroundColor:[UIColor redColor]];
-    
-    [self.contentView setBackgroundColor:[UIColor yellowColor]];
+//    [self setBackgroundColor:[UIColor redColor]];
+//    
+//    [self.contentView setBackgroundColor:[UIColor yellowColor]];
 }
 
 - (void)setImageURLString:(NSString *)imageURLString {

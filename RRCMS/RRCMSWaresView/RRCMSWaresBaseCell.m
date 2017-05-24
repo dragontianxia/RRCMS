@@ -23,7 +23,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [self setBackgroundColor:[UIColor redColor]];
+//    [self setBackgroundColor:[UIColor redColor]];
 }
 
 - (void)setItemModel:(RRCMSWaresModel *)itemModel {
