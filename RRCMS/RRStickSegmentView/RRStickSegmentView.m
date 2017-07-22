@@ -6,8 +6,6 @@
 //  Copyright © 2017 Ron. All rights reserved.
 //
 
-#define showThreePara(var1, var2, var3) (var1 + var2 + var3)
-
 #import "RRStickSegmentView.h"
 #import "RRStickSegmentCell.h"
 #import "RRStickSegmentMultiRowLayout.h"
@@ -42,7 +40,6 @@ static NSString * const segmentViewCellIdentifier = @"RRStickSegmentCell";
 
 - (instancetype)initWithFrame:(CGRect)frame dataSourceArray:(NSArray *)dataSourceArray itemSelected:(RRStickSegmentViewHandler)handler {
     if (self = [super initWithFrame:frame]) {
-        showThreePara(1, 2, 3);
         
         [self setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
         
@@ -164,12 +161,15 @@ static NSString * const segmentViewCellIdentifier = @"RRStickSegmentCell";
     cell.segmentName = self.dataSourceArray[indexPath.item];
     if (indexPath.item == 0 && !self.selectedIndexPath) {
         self.selectedIndexPath = indexPath;
-        [collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:0];
+        __weak typeof(self) wSelf = self;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [wSelf.segmentCollectionView selectItemAtIndexPath:wSelf.selectedIndexPath animated:YES scrollPosition:0];
+        });
     }
     return cell;
 }
 
-#pragma mark - <>
+#pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath == self.selectedIndexPath) return;
     
@@ -180,7 +180,7 @@ static NSString * const segmentViewCellIdentifier = @"RRStickSegmentCell";
 
     RRStickSegmentCell *cell = (RRStickSegmentCell *)[collectionView cellForItemAtIndexPath:indexPath];
     _isProcessing = YES;
-    [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    [collectionView scrollToItemAtIndexPath:self.selectedIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     [UIView animateWithDuration:0.28
                      animations:^{
                          [self.indicateLineView setOrigin:CGPointMake(cell.x, cell.y + _itemHeight)];
@@ -194,23 +194,26 @@ static NSString * const segmentViewCellIdentifier = @"RRStickSegmentCell";
     }
 }
 
-#pragma mark - ContentViewScroll
+#pragma mark - <ContentViewScroll>
 - (void)contentViewScrollOffsetX:(CGFloat)offsetX {
     if (_isProcessing) {
         return;
     }
     CGFloat newX = offsetX / self.width * _itemWidth;
     
-    NSUInteger newIndex = (int)(newX / _itemWidth);
-    
-    if (newIndex >= self.selectedIndexPath.item + 1 || newIndex <= self.selectedIndexPath.item - 1) {
-        self.selectedIndexPath = [NSIndexPath indexPathForItem:newIndex inSection:0];
-        [self.segmentCollectionView selectItemAtIndexPath:self.selectedIndexPath animated:YES scrollPosition:0];
-    }
     [self.indicateLineView setX:newX];
+    
+    CGFloat oldX = self.selectedIndexPath.item * _itemWidth;
+    
+    if (newX >= oldX + _itemWidth || newX <= oldX - _itemWidth) {
+        NSUInteger newIndex = (int)(newX / _itemWidth);
+        self.selectedIndexPath = [NSIndexPath indexPathForItem:newIndex inSection:0];
+        [self.segmentCollectionView selectItemAtIndexPath:self.selectedIndexPath animated:NO scrollPosition:0];
+        [self.segmentCollectionView scrollToItemAtIndexPath:self.selectedIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
 }
 
-#pragma mark - Events
+#pragma mark - <Events>
 
 - (void)onClickExpandButton {
     [self changeCollectionViewLayout];
